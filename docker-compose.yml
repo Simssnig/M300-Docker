@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    links:
+      - mongo
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
