@@ -35,3 +35,10 @@ im ordner vom git projekt
 ```
 docker-compose up -d
 ```
+## influx strings heraussuchen
+https://docs.influxdata.com/influxdb/cloud/query-data/execute-queries/data-explorer/
+## grafana verbinden
+https://www.stackhero.io/en/services/Grafana/documentations/Getting-started/How-to-connect-Grafana-to-InfluxDB-v2
+alle variablen befinden sich im .env file
+## grafana dashboards anlegen
+https://grafana.com/docs/grafana/latest/dashboards/
