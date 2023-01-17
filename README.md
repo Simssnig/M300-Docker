@@ -1,4 +1,8 @@
 # M300-Docker
+## einstieg
+dies ist nur eine lab version
+
+getestet mit telegraf:1.25.0, influxdb:2.6.1
 ## docker installieren
 ```
 apt-get install curl
