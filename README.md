@@ -22,7 +22,7 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 ```
 ## konfiguration
-alle notwendigen umgebungs und init variablen werden im file configuration.conf beschrieben
+alle notwendigen umgebungs und init variablen werden im file .env beschrieben
 
 mit folgendem befehl kann ein 32bit hex code generiert werden
 dieser wird als access token eingesetzt (DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)
