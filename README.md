@@ -39,6 +39,7 @@ docker-compose up -d
 https://docs.influxdata.com/influxdb/cloud/query-data/execute-queries/data-explorer/
 ## grafana verbinden
 anstelle von http://localhost:8086 http://influxdb:8086 verwenden 
+
 https://www.stackhero.io/en/services/Grafana/documentations/Getting-started/How-to-connect-Grafana-to-InfluxDB-v2
 alle variablen befinden sich im .env file
 ## grafana dashboards anlegen
