@@ -34,10 +34,9 @@ dieser wird als access token eingesetzt (DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)
 ```
 openssl rand -hex 32
 ```
-## docker starten
-im ordner vom git projekt
+## repository klonen & docker starten
 ```
-docker-compose up -d
+cd && git clone https://github.com/Simssnig/M300-Docker.git && cd M300-Docker && docker-compose up -d
 ```
 ## influx query heraussuchen
 https://docs.influxdata.com/influxdb/cloud/query-data/execute-queries/data-explorer/
