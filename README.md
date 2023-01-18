@@ -34,7 +34,7 @@ sudo systemctl enable containerd.service
 alle notwendigen umgebungs und init variablen werden im file .env beschrieben
 
 mit folgendem befehl kann ein 32bit hex code generiert werden
-dieser wird als access token eingesetzt (DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)
+dieser wird als access token in dem file .env eingesetzt ( die variable lautet: DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)
 ```
 openssl rand -hex 32
 ```
