@@ -2,6 +2,10 @@
 ## einstieg
 dies ist nur eine lab version
 
+## repository klonen
+```
+git clone https://github.com/Simssnig/M300-Docker.git
+```
 getestet mit telegraf:1.25.0, influxdb:2.6.1
 ## docker installieren
 ```
@@ -34,9 +38,10 @@ dieser wird als access token eingesetzt (DOCKER_INFLUXDB_INIT_ADMIN_TOKEN)
 ```
 openssl rand -hex 32
 ```
-## repository klonen & docker starten
+## docker starten
+im ordner vom projekt
 ```
-cd && git clone https://github.com/Simssnig/M300-Docker.git && cd M300-Docker && docker-compose up -d
+docker-compose up -d
 ```
 ## influx query heraussuchen
 https://docs.influxdata.com/influxdb/cloud/query-data/execute-queries/data-explorer/
