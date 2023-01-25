@@ -11,6 +11,8 @@ services:
       - '8086:8086'
     volumes:
       - influxdb_data:/var/lib/influxdb
+
+
   telegraf:
     image: telegraf
     container_name: telegraf
@@ -25,6 +27,21 @@ services:
       - influxdb
     ports:
       - '8125:8125/udp'
+
+  python:
+    build: ./pythonworker
+    container_name: pythonworker
+    restart: always
+    volumes:
+      - pythonworker_storage:/var/lib/pythonworker:rw
+    env_file:
+      - .env
+    depends_on:
+      - influxdb
+    links:
+      - influxdb
+
+
   grafana:
     image: grafana/grafana
     container_name: grafana-server
@@ -43,3 +60,4 @@ services:
 volumes:
   grafana_data: {}
   influxdb_data: {}
+  pythonworker_storage: {}
