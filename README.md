@@ -66,6 +66,9 @@ https://grafana.com/docs/grafana/latest/dashboards/
 You can configure Grafana, InfluxDB, and Telegraf to your needs by modifying the respective configuration files
 
 After modifying the configurations, restart the services to apply the changes.
+```
+docker-compose restart
+```
 ### Shutting Down
 To stop the services and remove the containers, run the following command:
 ```
